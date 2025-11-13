@@ -32,6 +32,7 @@ jobs:
             **/obj/
   test:
     runs-on: self-hosted
+    needs: build
     steps:
       - name: Check out repository code
         uses: actions/checkout@v5
@@ -64,6 +65,6 @@ jobs:
           path: |
             **/bin/
             **/obj/
-            
+
 
 
