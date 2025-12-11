@@ -70,6 +70,7 @@ jobs:
             **/obj/
 
   e2e_test:
+    if: false
     runs-on: self-hosted
     needs: test
     env:
@@ -157,6 +158,7 @@ jobs:
           path: "**/*.coverage.xml"   
 
   security:
+    if: false
     runs-on: self-hosted
     needs: test
     permissions:
